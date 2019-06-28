@@ -44,18 +44,14 @@ input[type=number] {
 }
 
 #pixelCanvas{
-    display: flex;
     font-size: 0;
-    width: auto;
-    flex-wrap: wrap;
     margin: 0 auto;
 }
-
+/*get the direct child of the #pixelCanvas(created by JavaScript)*/
 #pixelCanvas > .grid-item {
     display: inline-block;
-    height: 20px;
-    width: 20px;
     background-color: transparent;
     border: 1px solid #000;
+    transition: background-color 0.2s ease-in-out;
     cursor: pointer;
 }
